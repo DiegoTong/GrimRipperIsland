@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Characters.h">
+      <UniqueIdentifier>{0e211286-8502-4d62-9f65-d9148a0d9aed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters">
+      <UniqueIdentifier>{b91b10f5-1067-4de0-a747-dddd9e02b74a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Rooms.h">
+      <UniqueIdentifier>{3153e046-d041-4c5b-ae77-0945af6f6926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Rooms">
+      <UniqueIdentifier>{6d38e59c-5fb5-44aa-83a2-56162e5013d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Characters.h\Items.h">
+      <UniqueIdentifier>{a19e7d56-f9cb-4ede-9c9c-9707d14ed4fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Items">
+      <UniqueIdentifier>{764f39d5-74f3-4560-9e18-52d4074aab51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Enemies">
+      <UniqueIdentifier>{2b370afd-773a-4128-8a32-ecc34f662769}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Characters.h\Enemies.h">
+      <UniqueIdentifier>{4cc60648-7a57-4705-88d0-ef844a4d6d2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Levels">
+      <UniqueIdentifier>{6fafb16c-61a9-40f1-9c8d-8c883f0012d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Levels.h">
+      <UniqueIdentifier>{c57f0edd-12af-4207-8f38-3e307da3ba14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Characters.h\Items.h\lostItems.h">
+      <UniqueIdentifier>{6d36d5e4-beb8-434c-867d-60b628887dc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Characters.h\Items.h\lostItems.h\gifts.h">
+      <UniqueIdentifier>{aadd57fb-0604-43a5-9310-f0946d367653}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Items\lostItems">
+      <UniqueIdentifier>{c30c4434-20d7-489c-98b9-f1d0a18477f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Items\lostItems\gifts">
+      <UniqueIdentifier>{1f3fa05a-e4f3-41ab-9b44-c4b7d3475101}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCharacter.cpp">
+      <Filter>Source Files\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="room.cpp">
+      <Filter>Source Files\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="BigRoom.cpp">
+      <Filter>Source Files\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="LongRoom.cpp">
+      <Filter>Source Files\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="MediumRoom.cpp">
+      <Filter>Source Files\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="SmallRoom.cpp">
+      <Filter>Source Files\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Source Files\Characters\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Portal.cpp">
+      <Filter>Source Files\Characters\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Encounter.cpp">
+      <Filter>Source Files\Characters\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Source Files\Characters\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Source Files\Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Level1.cpp">
+      <Filter>Source Files\Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Level3.cpp">
+      <Filter>Source Files\Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Level2.cpp">
+      <Filter>Source Files\Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="LongRoomPr.cpp">
+      <Filter>Source Files\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="Candle.cpp">
+      <Filter>Source Files\Characters\Items\lostItems\gifts</Filter>
+    </ClCompile>
+    <ClCompile Include="Clock.cpp">
+      <Filter>Source Files\Characters\Items\lostItems\gifts</Filter>
+    </ClCompile>
+    <ClCompile Include="Apple.cpp">
+      <Filter>Source Files\Characters\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Axe.cpp">
+      <Filter>Source Files\Characters\Items\lostItems</Filter>
+    </ClCompile>
+    <ClCompile Include="Crown.cpp">
+      <Filter>Source Files\Characters\Items\lostItems</Filter>
+    </ClCompile>
+    <ClCompile Include="Statue.cpp">
+      <Filter>Source Files\Characters\Items\lostItems</Filter>
+    </ClCompile>
+    <ClCompile Include="Painting.cpp">
+      <Filter>Source Files\Characters\Items\lostItems</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Source Files\Characters\Items\lostItems\gifts</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="room.h">
+      <Filter>Header Files\Rooms.h</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCharacter.h">
+      <Filter>Header Files\Characters.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\Characters.h</Filter>
+    </ClInclude>
+    <ClInclude Include="LongRoom.h">
+      <Filter>Header Files\Rooms.h</Filter>
+    </ClInclude>
+    <ClInclude Include="MediumRoom.h">
+      <Filter>Header Files\Rooms.h</Filter>
+    </ClInclude>
+    <ClInclude Include="SmallRoom.h">
+      <Filter>Header Files\Rooms.h</Filter>
+    </ClInclude>
+    <ClInclude Include="BigRoom.h">
+      <Filter>Header Files\Rooms.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Header Files\Characters.h\Items.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Portal.h">
+      <Filter>Header Files\Characters.h\Items.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files\Characters.h\Enemies.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Encounter.h">
+      <Filter>Header Files\Characters.h\Enemies.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Header Files\Levels.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Level1.h">
+      <Filter>Header Files\Levels.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Level3.h">
+      <Filter>Header Files\Levels.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Level2.h">
+      <Filter>Header Files\Levels.h</Filter>
+    </ClInclude>
+    <ClInclude Include="LongRoomPr.h">
+      <Filter>Header Files\Rooms.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Apple.h">
+      <Filter>Header Files\Characters.h\Items.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Candle.h">
+      <Filter>Header Files\Characters.h\Items.h\lostItems.h\gifts.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Clock.h">
+      <Filter>Header Files\Characters.h\Items.h\lostItems.h\gifts.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Header Files\Characters.h\Items.h\lostItems.h\gifts.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Painting.h">
+      <Filter>Header Files\Characters.h\Items.h\lostItems.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Axe.h">
+      <Filter>Header Files\Characters.h\Items.h\lostItems.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Crown.h">
+      <Filter>Header Files\Characters.h\Items.h\lostItems.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Statue.h">
+      <Filter>Header Files\Characters.h\Items.h\lostItems.h</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

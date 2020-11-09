@@ -1,0 +1,73 @@
+#include "Level1.h"
+void Level1::init(Player *mPlayer)
+{
+	levelFinished = false;
+	player = mPlayer;
+	lREntrance.init(0);
+	sREntranceleft.init(2);
+	sREntranceRight.init(2);
+	lREntranceToMain.init(1);
+	bRMainRoom.init(0);
+	sMMainRoomLeft.init(0);
+	mRBoss.init(3);
+	lRMainToSide.init(1);
+	sRKitchen.init(0);
+	Hall.init(0);
+	sRHallTop.init(2);
+	lRHallToChest.init(1);
+	sRChestRoom.init(2);
+
+	lREntrance.roomName = "lREntrance";
+	sREntranceleft.roomName = "sREntranceleft";
+	sREntranceRight.roomName = "sREntranceRight";
+	lREntranceToMain.roomName = "lREntranceToMain";
+	bRMainRoom.roomName = "bRMainRoom";
+	sMMainRoomLeft.roomName = "sMMainRoomLeft";
+	mRBoss.roomName = "mRBoss";
+	lRMainToSide.roomName = "lRMainToSide";
+	sRKitchen.roomName = "sRKitchen";
+	Hall.roomName = "Hall";
+	sRHallTop.roomName = "sRHallTop";
+	lRHallToChest.roomName = "lRHallToChest";
+	sRChestRoom.roomName = "sRChestRoom";
+	levelRooms.push_back(&lREntrance);
+	levelRooms.back()->createPortal(4, "sREntranceleft", 0, 2);
+	levelRooms.back()->createPortal(3, "sREntranceRight", levelRooms.back()->sizeX, 2);
+	levelRooms.back()->createPortal(2, "lREntranceToMain", 12, levelRooms.back()->sizeY);
+	levelRooms.push_back(&sREntranceleft);
+	levelRooms.back()->createPortal(3, "lREntrance", levelRooms.back()->sizeX, 2);
+	levelRooms.push_back(&sREntranceRight);
+	levelRooms.back()->createPortal(4, "lREntrance", 0, 2);
+	levelRooms.push_back(&lREntranceToMain);
+	levelRooms.back()->createPortal(1, "lREntrance", 2, 0);
+	levelRooms.back()->createPortal(2, "bRMainRoom", 2, levelRooms.back()->sizeY);
+	levelRooms.push_back(&bRMainRoom);
+	levelRooms.back()->createPortal(1, "lREntranceToMain", 8, 0);
+	levelRooms.back()->createPortal(4, "sMMainRoomLeft", 0, 3);
+	levelRooms.back()->createPortal(2, "mRBoss", 8, levelRooms.back()->sizeY);
+	levelRooms.back()->createPortal(3, "lRMainToSide", levelRooms.back()->sizeX, 3);
+	levelRooms.push_back(&sMMainRoomLeft);
+	levelRooms.back()->createPortal(3, "bRMainRoom", levelRooms.back()->sizeX, 2);
+	levelRooms.push_back(&mRBoss);
+	levelRooms.back()->createPortal(1, "bRMainRoom", 5, 0);
+	levelRooms.push_back(&lRMainToSide);
+	levelRooms.back()->createPortal(4, "bRMainRoom", 0, 2);
+	levelRooms.back()->createPortal(1, "sRKitchen", 6, 0);
+	levelRooms.back()->createPortal(3, "Hall", levelRooms.back()->sizeX, 2);
+	levelRooms.push_back(&sRKitchen);
+	levelRooms.back()->createPortal(2, "lRMainToSide", 3, levelRooms.back()->sizeY);
+	levelRooms.push_back(&Hall);
+	levelRooms.back()->createPortal(4, "lRMainToSide", 0, 3);
+	levelRooms.back()->createPortal(1, "sRHallTop", 5, 0);
+	levelRooms.back()->createPortal(2, "lRHallToChest", 5, levelRooms.back()->sizeY);
+	levelRooms.push_back(&sRHallTop);
+	levelRooms.back()->createPortal(2, "Hall", 3, levelRooms.back()->sizeY);
+	levelRooms.push_back(&lRHallToChest);
+	levelRooms.back()->createPortal(1, "Hall", 2, 0);
+	levelRooms.back()->createPortal(2, "sRChestRoom", 2, levelRooms.back()->sizeY);
+	levelRooms.push_back(&sRChestRoom);
+	levelRooms.back()->createPortal(1, "lRHallToChest", 3, 0);
+	currentRoom = levelRooms.front();
+	setItemsInRooms(1);
+}
+
